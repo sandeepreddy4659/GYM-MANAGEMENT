@@ -1,0 +1,394 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* RESET + GLOBAL STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* GLOBAL BODY BACKGROUND */
+body {
+    color: black;
+    background-image: url("../images/gym-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Center Wrapper */
+.center-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Glass Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 40px;
+    width: 450px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.4);
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    color: black;
+    animation: fadeIn 1.3s ease;
+}
+
+/* Title Animation */
+.glass-card h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    animation: slideDown 1.2s ease;
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    background: #ff5722;
+    padding: 12px;
+    margin: 12px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #ff784e;
+    transform: scale(1.05);
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn.outline:hover {
+    background: white;
+    color: black;
+}
+
+/* FORM INPUTS */
+.form input,
+.form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    color: black;
+    background: rgba(255,255,255,0.9);
+}
+
+/* TABLE AREA */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.styled-table th {
+    background: #ff5722;
+    padding: 12px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.styled-table td {
+    padding: 10px;
+    background: rgba(255,255,255,0.15);
+    text-align: center;
+}
+
+.styled-table tr:hover td {
+    background: rgba(255,255,255,0.25);
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+    background: red;
+    padding: 6px 12px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    .glass-card {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .glass-card.wide {
+        width: 98%;
+    }
+}
+/* =============== PREMIUM BLUE UI THEME =============== */
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.20);
+    padding: 40px;
+    width: 480px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(0, 123, 255, 0.4);
+    box-shadow: 0 0 25px rgba(0, 123, 255, 0.5);
+    color: white;
+    animation: fadeIn 1.2s ease;
+}
+
+.glass-card h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #3ea9ff;
+    text-shadow: 0 0 12px rgba(0, 170, 255, 1);
+}
+
+/* BLUE BUTTONS */
+.btn {
+    display: block;
+    background: linear-gradient(90deg, #007bff, #00aaff);
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.7);
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(0, 170, 255, 1);
+}
+
+/* OUTLINE BUTTON */
+.btn.outline {
+    background: transparent;
+    border: 2px solid #3ea9ff;
+    color: #3ea9ff;
+}
+
+.btn.outline:hover {
+    background: #3ea9ff;
+    color: black;
+}
+
+/* BODY BLUE BORDER */
+body {
+    border: 10px solid rgba(0, 123, 255, 0.5);
+}
+
+/* TABLE HEADERS BLUE */
+.styled-table th {
+    background: #007bff;
+}
+
+/* DELETE BUTTON updated to match blue theme */
+.delete-btn {
+    background: #007bff;
+}
+
+.delete-btn:hover {
+    background: #0056b3;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+/* PREMIUM FORM TITLE */
+.form-title {
+    font-size: 28px;
+    color: #3ea9ff;
+    text-shadow: 0 0 10px rgba(0,150,255,0.9);
+    margin-bottom: 20px;
+}
+
+/* FORM INPUT GROUP */
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    color: #3ea9ff;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-shadow: 0 0 5px rgba(0,150,255,0.7);
+}
+
+/* FORM INPUT BOXES */
+.enhanced-form input,
+.enhanced-form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid rgba(0,150,255,0.6);
+    background: rgba(255,255,255,0.90);
+    color: black;
+    transition: 0.3s;
+}
+
+/* INPUT FOCUS EFFECT */
+.enhanced-form input:focus,
+.enhanced-form select:focus {
+    border-color: #3ea9ff;
+    box-shadow: 0 0 10px rgba(0,170,255,0.7);
+    outline: none;
+    transform: scale(1.03);
+}
+
+/* ADD MEMBER BUTTON */
+.add-btn {
+    background: linear-gradient(90deg, #007bff, #00aaff);
+    box-shadow: 0 0 14px rgba(0,170,255,0.9);
+}
+
+.add-btn:hover {
+    box-shadow: 0 0 22px rgba(0,170,255,1);
+    transform: scale(1.08);
+}
+/* ========== PREMIUM BLUE TABLE LOOK ========== */
+
+.glass-card.wide {
+    background: rgba(255,255,255,0.18);
+    border: 2px solid rgba(0,150,255,0.5);
+    box-shadow: 0 0 30px rgba(0,150,255,0.4);
+    padding: 30px;
+    border-radius: 18px;
+    animation: fadeIn 1.2s ease;
+}
+
+/* TITLE */
+.glass-card.wide h2 {
+    color: #3ea9ff;
+    text-shadow: 0 0 12px rgba(0,150,255,0.9);
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+/* TABLE HEADER */
+.styled-table th {
+    background: linear-gradient(90deg, #007bff, #00aaff);
+    color: white;
+    text-shadow: 0 0 4px rgba(0,0,0,0.7);
+    font-size: 18px;
+    padding: 12px;
+}
+
+/* DARKER, CLEARER TABLE TEXT */
+.styled-table td {
+    color: #030303; /* brighter gray-white */
+    font-size: 18px;
+    padding: 14px;
+    font-weight: 600;
+    text-shadow: 0 0 3px rgba(8, 8, 8, 0.9);
+    background: rgba(245, 244, 244, 0.35); /* darker background */
+}
+
+.styled-table tr:hover td {
+    background: rgba(0,150,255,0.25);
+    transition: 0.3s ease;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+    background: #007bff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,150,255,0.8);
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: #0056b3;
+    box-shadow: 0 0 14px rgba(0,150,255,1);
+    transform: scale(1.07);
+}
+
+/* BACK BUTTON */
+.btn.outline {
+    border-color: #3ea9ff;
+    color: #3ea9ff;
+}
+
+.btn.outline:hover {
+    background: #3ea9ff;
+    color: black;
+}
+/* ===== LOGOUT BUTTON (TOP RIGHT) ===== */
+
+.logout-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 999;
+}
+
+.logout-btn {
+    background: linear-gradient(90deg, #007bff, #00aaff);
+    padding: 10px 18px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,150,255,0.9);
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+}
+
+.logout-btn:hover {
+    background: #3ea9ff;
+    color: black;
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(0,200,255,1);
+}
+

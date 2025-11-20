@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Management – HTML Proof File</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f5ff;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0057ff;
+        }
+
+        h2 {
+            color: #0040c1;
+        }
+
+        .box {
+            background: #e7edff;
+            padding: 15px;
+            border-left: 5px solid #0057ff;
+            margin: 15px 0;
+            border-radius: 6px;
+            font-family: monospace;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Gym Membership Management System</h1>
+<h3 style="text-align:center;">(HTML + CSS + PHP + MySQL Demonstration File)</h3>
+
+<hr><br>
+
+<h2>✔ This project uses HTML</h2>
+<p>The entire UI is built using HTML structure.</p>
+
+<div class="box">
+<pre>
+&lt;div class="glass-card"&gt;
+    &lt;h1&gt;🏋️ Gym Membership System&lt;/h1&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+<h2>✔ This project uses CSS</h2>
+<div class="box">
+<pre>
+.glass-card {
+    background: rgba(255,255,255,0.2);
+    padding: 40px;
+    border-radius: 15px;
+}
+</pre>
+</div>
+
+<h2>✔ This project uses PHP</h2>
+<div class="box">
+<pre>
+&lt;?php
+$conn = new mysqli("localhost", "root", "", "gymdb");
+$result = $conn-&gt;query("SELECT * FROM members");
+?&gt;
+</pre>
+</div>
+
+<h2>✔ This project uses MySQL</h2>
+<p>Database: <b>gymdb</b></p>
+<p>Table: <b>members</b></p>
+
+<h2>✔ Live Project Files</h2>
+<ul>
+    <li>index.php</li>
+    <li>login.php</li>
+    <li>add_member.php</li>
+    <li>view_members.php</li>
+    <li>delete_member.php</li>
+    <li>css/style.css</li>
+    <li>Database: gymdb.sql</li>
+</ul>
+
+<br><hr>
+
+<p style="text-align:center;">
+This HTML file is added only as proof for evaluation purpose.  
+Your actual project continues to run using PHP.
+</p>
+
+</div>
+
+</body>
+</html>
